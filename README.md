@@ -44,7 +44,32 @@ Provided processors are basically wrappers around varius sentiment analysis impl
 
 ## ADDING NEW PROCESSORS
 
-TODO
+All processors have to be stored in directory:
+> src/main/java/cz/vutbr/mefw/plugins
+> Example: src/main/java/cz/vutbr/mefw/plugins/SA_lingpipe
+
+If your processor uses additional classes, they should be stored in:
+> src/main/java/cz/vutbr/mefw/plugins/[name_of_processor_group]
+> Example src/main/java/cz/vutbr/mefw/plugins/SA/
+
+Other resources like datasets, libs, etc. belongs in:
+> resources/[name_of_processor_group]
+> Example: resources/but_sentiment
+
+
+
+All processors have to be subclass of **ProcessorAdapter** class, which is abstract class with 3 methods.
+If this requirements is not met, you processor will not work.
+
+First method is constructor with config argument. Config is used to specifi path to plugin and resources directory.
+> public ProcessorAdapter(Config config);
+
+Second method is load(). This method is used to load external resources, for example datasets.
+> public void load();
+
+Third method is process(String data). This method is used for actual processing of data. 
+Method returns result of analysis, in case of sentiment analysis tool, this method return positive, neutral or negative.
+> public String process(String data)
 
 ## CITATIONS
 
