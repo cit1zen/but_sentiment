@@ -7,13 +7,13 @@ This package requires java 1.8 and python3 ( SA_VADER ), maven for instalation a
 
 ## INSTALATION
 
-1.) Use provided shell script to download Sentiment140 dataset needed by lingpipe.
-    > ./download_datasets.sh
+1. Use provided shell script to download Sentiment140 dataset needed by lingpipe.
+> download_datasets.sh
 
-2.) Use maven to build jar file.
-    > mvn install
+2. Use maven to build jar file.
+> mvn install
 
-    Output of this operation will be two files, mefw-0.0.1-jar-with-dependencies.jar and mefw-0.0.1.jar in targer directory.
+Output of this operation will be two files, mefw-0.0.1-jar-with-dependencies.jar and mefw-0.0.1.jar in targer directory.
 
 ## USAGE
 
@@ -35,13 +35,12 @@ Prints if text in input file was positive, neutral or negative.
 
 ## PROCESSORS
 
-### SA_lingpipe
+Provided processors are basically wrappers around varius sentiment analysis implementations.
 
-### SA_stanford
-
-### SA_VADER
-
-### SA_lingpipe_czech
+* SA_lingpipe [site](http://alias-i.com/lingpipe/index.html)
+* SA_stanford [site](http://nlp.stanford.edu/)
+* SA_VADER [site1](http://www.nltk.org/) [site2](https://github.com/cjhutto/vaderSentiment)
+* SA_lingpipe_czech [site](http://alias-i.com/lingpipe/index.html)
 
 ## ADDING NEW PROCESSORS
 
@@ -49,33 +48,42 @@ TODO
 
 ## CITATIONS
 
-Lingpipe:
-Alias-i. 2008. LingPipe 4.1.0. http://alias-i.com/lingpipe (accessed October 1, 2008)
+Lingpipe [site](http://alias-i.com/lingpipe/index.html):
+> Alias-i. 2008. LingPipe 4.1.0. http://alias-i.com/lingpipe (accessed October 1, 2008)
 
-StanfordCoreNLP:
-Manning, Christopher D., Mihai Surdeanu, John Bauer, Jenny Finkel, Steven J. Bethard, and David McClosky. 2014. The Stanford CoreNLP Natural Language Processing Toolkit In Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics: System Demonstrations, pp. 55-60.
+StanfordCoreNLP [site](http://nlp.stanford.edu/):
+> Manning, Christopher D., Mihai Surdeanu, John Bauer, Jenny Finkel, Steven J. Bethard, and David McClosky. 2014. The Stanford CoreNLP Natural Language Processing Toolkit In Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics: System Demonstrations, pp. 55-60.
 
-VADER:
+VADER: [site](https://github.com/cjhutto/vaderSentiment)
+> Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
+
+NLTK [site](http://www.nltk.org/):
+
 TODO
 
-Sentiment140 (dataset):
+Sentiment140 [site](http://help.sentiment140.com/)
+
 TODO
 
-Sanders (dataset):
+Sanders [site](http://www.sananalytics.com/lab/twitter-sentiment/):
+
 Not found. 
 
-Movie reviews:
+Movie reviews [site](http://www.cs.cornell.edu/people/pabo/movie-review-data):
+
 TODO
 
-rt_polarity data:
+rt_polarity data [site](http://www.nltk.org/):
 > Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales., Proceedings of the ACL, 2005.
 
-pros-cons:
+pros-cons [site](https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#datasets):
+
 TODO
 
-sts_gold:
+sts_gold [site](http://www.tweenator.com/index.php?page_id=1):
+
 TODO
 
-Czech sentiment:
+Czech sentiment [site](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1507):
 > Fiala, Ondřej, 2015, Aspect-Term Annotated Customer Reviews in Czech, LINDAT/CLARIN digital library at Institute of Formal and Applied Linguistics, Charles University in Prague, http://hdl.handle.net/11234/1-1507. 
 
